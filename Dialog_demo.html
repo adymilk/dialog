@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>layer demo</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="./css/dialog.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.dialog_wrapper form input[name=tel]{
+			padding-left: 40px;
+    		font-size: 15px;
+    		display: block;
+		    width: 100%;
+		    border: solid 1px #ddd;
+		    height: 50px;
+		    border-radius: 5px;
+		    padding: 0 10px;
+		    color: #666;
+		    font-size: 15px;
+		    box-sizing: border-box;
+		}
+		.dialog_wrapper form button{
+			height: 50px;
+		    border-radius: 5px;
+		    background: linear-gradient(to right, #ffe254 0%,#ffd401 100%);
+		    border: unset;
+		    width: 100%;
+		    font-weight: bold;
+		}
+		.dialog_item{
+			margin: 2rem 1rem;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+<div class="dialog_container">
+	<div class="dialog_wrapper">
+		<div class="dialog_item">
+			<div class="btn_close">×</div>
+			<h2>查询附近门店地址</h2>				
+		</div>
+		<form>
+			<div class="dialog_item">
+				<i class="icon-camera-retro"></i><input type="text" name="tel" placeholder="手机号">
+			</div>
+			<div class="dialog_item">
+				<button>门店地址发手机</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+ <script src="./js/dialog.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        Dialog('.dialog_container', {
+        });
+    });
+
+    $(window).resize(function () {
+        Dialog('.dialog_container');
+    });
+
+
+</script>
+</body>
+</html>
