@@ -42,6 +42,8 @@
 </head>
 <body>
 
+<button style="font-size: 2rem">点击</button>
+
 <div class="dialog_container">
 	<div class="dialog_wrapper">
 		<div class="dialog_item">
@@ -63,6 +65,9 @@
  <script src="./js/dialog.js"></script>
 
 <script type="text/javascript">
+	$('button').click(function function_name(argument) {
+		$('.dialog_container').show();
+	});
     $(document).ready(function () {
         Dialog('.dialog_container', {
         });
