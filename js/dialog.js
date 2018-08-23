@@ -1,8 +1,15 @@
-var dialog = function (element, newconfig) {
+var html = 
+    "<div class='dialog_container'>"+
+        "<div class='dialog_wrapper'>"+
+            "<div class='btn_close'>x</div>"+
+        "</div>"+
+    "</div>";
 
-    if (!element) {
-        return;
-    }
+$('body').append(html);
+
+var dialog = function (dialog_item,newconfig) {
+
+    $('.dialog_wrapper').append(dialog_item);
 
     var config = {
         document_hight: $(document).height(),
@@ -25,12 +32,13 @@ var dialog = function (element, newconfig) {
     // 关闭 Dialog
     $(config.btn_close).click(function () {
         if (config.dismiss_style === 'fadeOut'){
-            $(element).fadeOut();
+            $('.dialog_container').fadeOut();
         }else{
-            $(element).hide();
+            $(dialog_container).hide();
         }
     });
-    $(element).css({
+
+    $('.dialog_container').css({
         height: config.document_hight,
         width: config.document_width,
     });
@@ -40,10 +48,6 @@ var dialog = function (element, newconfig) {
         width: config.dialog_wrapper_width,
         'background-color': config.dialog_wrapper_bg,
     });
-
-
-    
-
 
     $('.dialog_wrapper').show();
 

@@ -2,11 +2,14 @@
 
 `注意` 插件依赖 `jquery` , 所以使用 `Dialog.js ` 之前引入需要 `jquery.js`
 
-这是 `jquery ` CDN
+这是 提供 CDN
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://rawcdn.githack.com/adymilk/dialog/master/js/dialog.js"></script>
+<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/adymilk/dialog/master/css/dialog.css">
 
 ## 文档
 首先引入 `dialog.css` 、`jquery.js` 和 `dialog.js`
+
 
 ```html
 <div class="dialog_container">
