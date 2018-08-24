@@ -39,10 +39,6 @@ var dialog = function (element, newconfig) {
         'background-color': config.dialog_wrapper_bg,
     });
 
-
-    
-
-
     $('.dialog_wrapper').show();
 
 };
