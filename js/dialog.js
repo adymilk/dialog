@@ -34,12 +34,12 @@ var dialog = function (element, newconfig) {
     });
 
 
-    $('.dialog_wrapper').css({
+    $(element).find(".dialog_wrapper").css({
         width: config.dialog_wrapper_width,
         'background-color': config.dialog_wrapper_bg,
     });
 
-    $('.dialog_wrapper').show();
+    $(element).find('.dialog_wrapper').show();
 
 };
 
