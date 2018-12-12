@@ -17,7 +17,6 @@
 
 > 一行代码搞定前端页面模态框，让 `new Dialog` 变得更`easy`
 
-! [实例图](https://raw.githubusercontent.com/adymilk/dialog/master/img/1.png)
 
 ## [在线演示地址](https://adymilk.github.io/dialog/)
 
