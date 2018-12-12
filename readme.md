@@ -1,8 +1,23 @@
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/18715564/41582703-e8f62c6c-73d4-11e8-8354-c7a230311f9a.png" alt="" width=200>
+</p>
+<p align="center">
+  <a href="https://travis-ci.org/adymilk/dialog">
+    <img src="https://travis-ci.org/LeachZhou/blog.svg?branch=master" alt="">
+  </a>
+  <a href="https://github.com/adymilk/dialog/releases">
+    <img src="https://img.shields.io/github/release/LeachZhou/blog.svg" alt="">
+  </a>
+  <a href="https://github.com/adymilk/dialog/blob/master/LICENSE">
+     <img src="https://img.shields.io/github/license/LeachZhou/blog.svg" alt="">
+  </a>
+</p>
+
 ## Dialog 插件 一键生成网页模态框（dialog） 
 
 > 一行代码搞定前端页面模态框，让 `new Dialog` 变得更`easy`
 
-！[实例图](https://raw.githubusercontent.com/adymilk/dialog/master/img/1.png)
+! [实例图](https://raw.githubusercontent.com/adymilk/dialog/master/img/1.png)
 
 ## [在线演示地址](https://adymilk.github.io/dialog/)
 
