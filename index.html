@@ -5,39 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="./css/dialog.css">
-	<style type="text/css">
-		*{
-			margin: 0;
-			padding: 0;
-		}
 
-		.dialog_wrapper form input[name=tel]{
-			padding-left: 40px;
-    		font-size: 15px;
-    		display: block;
-		    width: 100%;
-		    border: solid 1px #ddd;
-		    height: 50px;
-		    border-radius: 5px;
-		    padding: 0 10px;
-		    color: #666;
-		    font-size: 15px;
-		    box-sizing: border-box;
-		}
-		.dialog_wrapper form button{
-			height: 50px;
-		    border-radius: 5px;
-		    background: linear-gradient(to right, #ffe254 0%,#ffd401 100%);
-		    border: unset;
-		    width: 100%;
-		    font-weight: bold;
-		}
-		.dialog_item{
-			margin: 2rem 1rem;
-		}
-
-		
-	</style>
 </head>
 <body>
 
@@ -66,7 +34,7 @@
 <script type="text/javascript">
 
 	$('button').click(function () {
-			Dialog('.dialog_container');
+			Dialog('.dialog_container',{dialog_wrapper_width:'65%'});
 			console.log(0)
 	});
 

@@ -1,35 +1,57 @@
-## 前端 Dialog 插件 
+## Dialog 插件 一键生成网页模态框（dialog） 
+
+> 一行代码搞定前端页面模态框，让 `new Dialog` 变得更`easy`
+
+！[实例图](https://raw.githubusercontent.com/adymilk/dialog/master/img/1.png)
+
+## [在线演示地址](https://adymilk.github.io/dialog/)
+
 
 `注意` 插件依赖 `jquery` , 所以使用 `Dialog.js ` 之前引入需要 `jquery.js`
 
-这是 提供 CDN
+```
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://rawcdn.githack.com/adymilk/dialog/master/js/dialog.js"></script>
-<link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/adymilk/dialog/master/css/dialog.css">
+// 插件依赖JQuery 
 
-## 文档
-首先引入 `dialog.css` 、`jquery.js` 和 `dialog.js`
+<script src="https://raw.githubusercontent.com/adymilk/dialog/master/js/dialog.js"></script>
+<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/adymilk/dialog/master/css/dialog.css">
+```
 
 
+## 使用方法
+
+> html 部分
 ```html
+// 对话框内容
 <div class="dialog_container">
     <div class="dialog_wrapper">
         <div class="dialog_item">
-            <h1>测试dialog</h1>
+            <div class="btn_close">×</div>
+            <h2>查询附近门店地址</h2>               
         </div>
+        <form>
+            <div class="dialog_item">
+                <i class="icon-camera-retro"></i><input type="text" name="tel" placeholder="手机号">
+            </div>
+            <div class="dialog_item">
+                <button>门店地址发手机</button>
+            </div>
+        </form>
     </div>
 </div>
 ```
 
+> js 部分
+
+
 ```javascript
+
 Dialog('.dialog_container');
 ```
 
 默认配置项，你可以在使用的时候自定义传入参数
 ```JavaScript
     var config = {
-        document_hight: $(document).height(),
-        document_width: $(window).width(),
         btn_close: '.btn_close',//关闭按钮的类名
         dismiss_style: 'fadeOut',//对话框退出样式
         dialog_wrapper_width: '420px',//对话框的宽
@@ -37,32 +59,3 @@ Dialog('.dialog_container');
     };
 ```
 
-基本使用
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="./css/dialog.css">
-</head>
-<body>
-
-<div class="dialog_container">
-    <div class="dialog_wrapper">
-        <div class="dialog_item">
-            <div class="btn_close">x</div>
-            <h1>测试数据</h1>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<script src="./js/dialog.js"></script>
-
-<script>
-    Dialog('.dialog_container');
-</script>
-</body>
-</html>
-```
-#### 使用例子请看 Doalog_demo.html

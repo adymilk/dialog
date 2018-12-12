@@ -1,33 +1,52 @@
-.dialog_container{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 9999;
-	background-color: rgba(0,0,0,0.5);
-}
+
 .dialog_wrapper{
-	display: none;
-	width: 420px;
-	position: fixed;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	background-color: #fff; 
-	padding: 1rem;
-	border-radius: 5px;
-	margin-top: 2rem;
-	padding: 0 1rem;
+    display: none;
+    width: 90%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.4rem;
 }
 .btn_close{
-	text-align: center;
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	border: 1px solid #cdcdcd;
-	color: #b4b4b4;
-	font-size: 1.1rem;
-	cursor: pointer;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    color: #b4b4b4;
+    font-size: 0.3rem;
+    cursor: pointer;
+    z-index: 2;
+    font-weight: bold;
+}
+.dialog_item{
+    text-align: center;
+}
+.dialog_item input{
+    width: 95%;
+    margin: 12px 0;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+    color: black;
+    border: 1px solid #ccc;
+
+}
+
+.dialog_item button{
+    width: 100%;
+    background-color: red;
+    border: 0;
+    color: #ffffff;
+    height: 45px;
+    font-size: 18px;
 }
